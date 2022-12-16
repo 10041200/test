@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 9;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body.home {
+  background-image: url(./img/014.JPG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.headline {
+  position: fixed;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  font-size: 70px;
+}
+
+.home-links {
+  position: fixed;
+  top: 50%;
+  left: 30px;
+
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hl-item {
+  border-radius: 9999px;
+  background-color: rgb(169, 187, 222);
+
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.hl-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hl-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hl-title {
+  font-size: 20px;
+}
+
+.hl-translation {
+  font-size: 14px;
+}
+
+.nav-wrapper {
+  text-align: left;
+}
+
+.navigation {
+  display: inline-flex;
+  gap: 30px;
+  background-color: rgb(169, 187, 222);
+  padding: 10px 120px 10px 40px;
+}
+
+body {
+  background-color: rgb(229, 229, 229);
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+section {
+  position: relative;
+}
+
+section.epoch {
+  margin: auto;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+
+  margin-top: 200px;
+
+  font-size: 25px;
+}
+
+section.epoch img {
+  width: 800px;
+}
+
+section.epoch h2 {
+  margin-top: 40px;
+}
+
+section.epoch p {
+  line-height: 2;
+  margin-top: 50px;
+}
+
+section.description {
+  margin: auto;
+  display: inline-flex;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
+
+  margin-top: 200px;
+
+  font-size: 25px;
+}
+
+section.description img {
+  width: 800px;
+}
+
+section.description p {
+  width: 550px;
+  line-height: 2;
+  margin-top: 50px;
+}
+
+.trapezoid-blue-right {
+  opacity: 0.5;
+  position: absolute;
+  left: -120px;
+  top: 50px;
+  z-index: -1;
+
+  border-bottom: 100px solid rgb(150, 174, 219);
+  border-left: 90px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 1000vw;
+}
+
+.trapezoid-red-left {
+  background-color: rgb(156, 45, 45);
+  opacity: 0.5;
+  height: 100px;
+  width: 1000vw;
+
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: -1;
+}
+
+.ads {
+  margin-top: 130px;
+  position: relative;
+  height: 1200px;
+}
+
+.ad {
+  display: block;
+  text-align: center;
+}
+
+.ad img {
+  width: 480px;
+  height: auto;
+}
+
+.ad p {
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.ad.wine {
+  transform: translateX(-200px);
+}
+
+.ad.magazine {
+  z-index: -1;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(calc(-50% + 200px));
+}
+
+.trapezoid-red-right {
+  opacity: 0.5;
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  z-index: -1;
+
+  border-bottom: 100px solid rgb(156, 45, 45);
+  border-left: 90px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 1000vw;
+}
+
+.companies {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.companies-paragraph {
+  text-align: left;
+  font-size: 28px;
+  max-width: 1000px;
+  margin: auto;
+  line-height: 2;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.books {
+  margin-top: 500px;
+  position: relative;
+}
+
+.book-big {
+  width: 650px;
+  border-radius: 120px;
+  transform: translateX(-100px);
+}
+
+.book-small {
+  width: 350px;
+  border-radius: 80px;
+  position: absolute;
+  top: -300px;
+  left: calc(50% + 100px);
+  z-index: -1;
+}
+
+.trapezoid-red-right-thin {
+  background-color: rgb(156, 45, 45);
+  opacity: 0.5;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  height: 50px;
+  width: 1000vw;
+  z-index: -1;
+}
+
+article {
+  text-align: left;
+  margin: auto;
+  max-width: 800px;
+}
+
+article h2 {
+  font-size: 40px;
+  margin-top: 100px;
+}
+
+article p {
+  font-size: 30px;
+  line-height: 2;
+}
